@@ -1,6 +1,12 @@
 # GMail-Architecture
 GMail Architecture
 
+Assumptions:
+Number of users: 2B
+Number of devices per user: 2
+Number of users opting for 2-step verification: 10% ~ 200M
+Assume an attachment is on average = 1 MB
+
 ### Need for separate search engine 
 
 The email service can provide some basic search APIs like search by receiver, date etc… However, complex search queries will require a join across tables, which is expensive.
